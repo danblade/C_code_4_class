@@ -73,7 +73,7 @@ void convert(int typeTo, float usVal)
 	selectedAmt = usVal*rate[typeTo];
 	
 //Append conversions to file and close it
-	fprintf(saveFile, "%.2f in %s\n", selectedAmt, destination[typeTo]);
+	fprintf(saveFile, "%.2f in %s to USD %.2f\n", selectedAmt, destination[typeTo], usVal);
 	fclose(saveFile);
 	
 //Print conversions to screen
